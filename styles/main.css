@@ -1,14 +1,165 @@
-body {
-  font-family: sans-serif;
-  max-width: 600px;
-  margin: 2rem auto;
-  padding: 0 1rem;
-  line-height: 1.5;
+/* Global Style */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Helvetica;
+    padding: 40px;
+    background: #f9f9f9;
+  }
+  
+  p {
+    text-align: justify;
+  }
+  
+  /* Header/Blog Title */
+  .header {
+    padding: 30px;
+    text-align: center;
+    background: white; /* Light orange for warmth */
+    color: #333;
+  }
+  
+  .header h1 {
+    font-size: 50px;
+    color: black; /* Bright red-orange */
+  }
+  
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #ffb6b9; /* Soft red for hover effect */
+    color: black;
+  }
+  
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background: url('bfhomes-hero.png') no-repeat center center/cover;
+    color: #ffffff;
+    text-align: center;
+    padding: 80px 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
-a {
-  color: blue;
-  text-decoration: none;
+
+.hero .hero-content {
+    max-width: 1184px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for text readability */
+    padding: 20px;
+    border-radius: 8px;
 }
-a:hover {
-  text-decoration: underline;
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #ffde7d; /* Soft yellow to contrast with dark background */
 }
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.read-more-btn {
+    background-color: #ff5733; /* Bright red-orange for the button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.read-more-btn:hover {
+    background-color: #e63946; /* Slightly darker shade on hover */
+}
+
+
+  /* Create two unequal columns that float next to each other */
+  /* Left column */
+  .leftcolumn {   
+    float: left;
+    width: 75%;
+    background-color: #fff5e6; /* Light beige for softness */
+    padding: 0;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #e6f7ff; /* Light blue for contrast */
+    padding-left: 5px;
+  }
+  
+  /* Fake image (For article placeholders) */
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+    background-color: #ffffff;
+    padding: 5px;
+    margin-top: 5px;
+   /* border-left: 5px solid #6a0dad; /* Purple highlight for articles */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Clear floats after the columns */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #dff9fb; /* Very light cyan for footer */
+    color: #333;
+    margin-top: 20px;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
+  
