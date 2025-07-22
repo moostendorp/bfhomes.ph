@@ -21,10 +21,7 @@
     color: #333;
   }
   
-  .header h1 {
-    font-size: 50px;
-    color: black; /* Bright red-orange */
-  }
+ 
   
   /* Style the top navigation bar */
   .topnav {
@@ -74,18 +71,33 @@
   z-index: 2;
 }
 
+.hero h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #172365; 
+    background-color: #F0E4D8;
+}
+
 
 .hero h2 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     margin-bottom: 10px;
-    color: #ffde7d; /* Soft yellow to contrast with dark background */
+    color: #172365; /* Soft yellow to contrast with dark background */
 }
 
 .hero p {
-    font-size: 1.2rem;
+    font-size: 2rem;
     margin-bottom: 20px;
 }
 
+.details h1{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #172365; 
+    background-color: #F0E4D8;
+
+}
 .read-more-btn {
     background-color: #ff5733; /* Bright red-orange for the button */
     color: white;
@@ -168,6 +180,7 @@
 
 .contact button {
   background-color: #28a745;
+  text-align: center;
   color: white;
   padding: 12px;
   border: none;
@@ -179,7 +192,13 @@
   background-color: #218838;
 }
 
-
+.contact-section h1{
+  font-size: 2rem;
+    margin-bottom: 10px;
+    color: #172365; 
+    text-align: center;
+    background-color: #F0E4D8;
+}
 .whatsapp-link {
     display: inline-flex;
     align-items: center;
@@ -200,6 +219,36 @@
   .whatsapp-link:hover {
     background-color: #128C7E;
   }
+.gallery h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #172365; 
+    text-align: center;
+    background-color: #F0E4D8;
+    
+}
+.gallery img {
+      width: 20%;
+      max-width: 400px;
+      height: auto;
+      margin: 0.5rem;
+      cursor: pointer;
+    }
+
+    .lightbox {
+      position: fixed;
+      display: none;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.8);
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+    }
 
   /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 800px) {
